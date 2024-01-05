@@ -55,5 +55,36 @@ SELECT TOP 1 FIRSTNAME, AGE FROM ExampleTable ORDER BY AGE DESC
 -- Delete records of individuals from 'Germany':
 DELETE FROM ExampleTable WHERE Country = 'GERMANY'
 
+-- Level-up
+
+-- 1. Retrieve the full names (concatenation of first and last name) of individuals aged 30 or older
+SELECT FIRSTNAME + ' ' + LASTNAME AS [FULL NAME] FROM ExampleTable WHERE AGE>=30
+-- OR 
+SELECT CONCAT(FIRSTNAME ,' ', LASTNAME) AS [FULL NAME] FROM ExampleTable WHERE AGE>=30
+
+
+-- 2. Find the top 3 cities with the highest average age of individuals:
+SELECT TOP 3 CITY, AVG(AGE) AS [AVERAGE AGE] FROM ExampleTable GROUP BY City ORDER BY [AVERAGE AGE] DESC
+
+-- 3. Calculate the percentage of individuals from each country in the table:
+SELECT Country, COUNT(*) * 100.0/COUNT(*) OVER() AS Percentage
+FROM ExampleTable GROUP BY Country;
+
+
+--4. Retrieve the records of individuals who have the same first name but different last names:
+
+-- 5. Update the City to 'Unknown' for individuals with a null City:
+
+-- 6. Find the individuals with the highest age in each country:
+
+--7. Retrieve the records of individuals who have a duplicate combination of first name and last name:
+
+--8. Calculate the age difference between each individual and the youngest person in the same city:
+
+-- 9. Delete records of individuals with an age less than 25 and a city not equal to 'Unknown':
+
+-- 10. Retrieve the individuals who have the same age as at least one other person in the table:
+
+
 
 
