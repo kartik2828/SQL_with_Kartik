@@ -30,3 +30,11 @@ Welcome to my comprehensive SQL repository, your ultimate destination for master
 12. **Regular Updates:** Stay up-to-date with the latest SQL trends and developments. I'll keep this repository current to ensure you have access to the most relevant information.
 
 This SQL repository is your gateway to becoming a proficient SQL practitioner. Whether you're pursuing a career in data analysis, database management, or simply want to expand your skill set, you'll find everything you need right here. So, let's embark on this SQL journey together and unlock the potential of data!
+
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<h2> 50 Day Challenge to become Master in SQL </h2>
+
+Day 1 = If you have covered your basics then you can start from Day 1 otherwise Go with basics first.
+
+Day 2 = Complete SQL 50 Question on Leetcode.
