@@ -10,5 +10,22 @@ SELECT *,
 FROM triangle;
 
 
+# 177. Nth Highest Salary
+
+CREATE FUNCTION getNthHighestSalary(@N INT) RETURNS INT AS
+BEGIN
+    RETURN (
+        /* Write your T-SQL query statement below. */
+        SELECT DISTINCT Salary
+        FROM (
+            SELECT Salary, DENSE_RANK() OVER (ORDER BY Salary DESC) AS SalaryRank
+            FROM Employee
+        ) AS RankedSalaries
+        WHERE SalaryRank = @N
+    );
+END
+
+
+
 
 
